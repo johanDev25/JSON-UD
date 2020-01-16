@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       #     # Directs /admin/products/* to Admin::ProductsController
       #     # (app/controllers/admin/products_controller.rb)
-      resources :products, only: [:index, :create]
+      resources :products, only: [:index, :create, :udapte, :destroy]
     end
   end
 
