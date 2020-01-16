@@ -16,7 +16,7 @@ class Api::V1::ProductsController < ApplicationController
 
   def update
   @product = Product.find(params[:id])
-  if @product.update(@product_params)
+  if @product.update(product_params)
     render json: @product, status: 200
   else
     render json: { errors: @product.errors }, status: 422
